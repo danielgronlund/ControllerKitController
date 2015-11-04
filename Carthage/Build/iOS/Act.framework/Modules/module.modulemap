@@ -1,0 +1,10 @@
+framework module Act {
+  umbrella header "Act.h"
+
+  export *
+  module * { export * }
+}
+
+module Act.Swift {
+    header "Act-Swift.h"
+}

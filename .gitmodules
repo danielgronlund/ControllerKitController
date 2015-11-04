@@ -1,0 +1,6 @@
+[submodule "Carthage/Checkouts/Act"]
+	path = Carthage/Checkouts/Act
+	url = https://github.com/Goos/Act.git
+[submodule "Carthage/Checkouts/ControllerKit"]
+	path = Carthage/Checkouts/ControllerKit
+	url = https://github.com/Goos/ControllerKit.git

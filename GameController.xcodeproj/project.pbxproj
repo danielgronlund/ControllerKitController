@@ -14,7 +14,28 @@
 		333C63551BE8DB4400401FE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 333C63531BE8DB4400401FE9 /* Main.storyboard */; };
 		333C63571BE8DB4400401FE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 333C63561BE8DB4400401FE9 /* Assets.xcassets */; };
 		333C635A1BE8DB4400401FE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 333C63581BE8DB4400401FE9 /* LaunchScreen.storyboard */; };
+		337F6B421BEA7BED0035A5BA /* Act.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 337F6B401BEA7BED0035A5BA /* Act.framework */; };
+		337F6B431BEA7BED0035A5BA /* Act.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 337F6B401BEA7BED0035A5BA /* Act.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		337F6B441BEA7BED0035A5BA /* ControllerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 337F6B411BEA7BED0035A5BA /* ControllerKit.framework */; };
+		337F6B451BEA7BED0035A5BA /* ControllerKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 337F6B411BEA7BED0035A5BA /* ControllerKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		33FDBEF01BEA335E00FEA30E /* Joystick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDBEEF1BEA335E00FEA30E /* Joystick.swift */; };
+		33FDBEF21BEA6BF800FEA30E /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDBEF11BEA6BF800FEA30E /* Button.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		337F6B461BEA7BED0035A5BA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				337F6B431BEA7BED0035A5BA /* Act.framework in Embed Frameworks */,
+				337F6B451BEA7BED0035A5BA /* ControllerKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		333C63481BE8DB4400401FE9 /* GameController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameController.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +47,10 @@
 		333C63561BE8DB4400401FE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		333C63591BE8DB4400401FE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		333C635B1BE8DB4400401FE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		337F6B401BEA7BED0035A5BA /* Act.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Act.framework; path = Carthage/Build/iOS/Act.framework; sourceTree = "<group>"; };
+		337F6B411BEA7BED0035A5BA /* ControllerKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ControllerKit.framework; path = Carthage/Build/iOS/ControllerKit.framework; sourceTree = "<group>"; };
+		33FDBEEF1BEA335E00FEA30E /* Joystick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Joystick.swift; sourceTree = "<group>"; };
+		33FDBEF11BEA6BF800FEA30E /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				337F6B421BEA7BED0035A5BA /* Act.framework in Frameworks */,
+				337F6B441BEA7BED0035A5BA /* ControllerKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +69,8 @@
 		333C633F1BE8DB4400401FE9 = {
 			isa = PBXGroup;
 			children = (
+				337F6B401BEA7BED0035A5BA /* Act.framework */,
+				337F6B411BEA7BED0035A5BA /* ControllerKit.framework */,
 				333C634A1BE8DB4400401FE9 /* GameController */,
 				333C63491BE8DB4400401FE9 /* Products */,
 			);
@@ -58,9 +87,12 @@
 		333C634A1BE8DB4400401FE9 /* GameController */ = {
 			isa = PBXGroup;
 			children = (
+				33FDBEF31BEA790E00FEA30E /* Frameworks */,
 				333C634B1BE8DB4400401FE9 /* AppDelegate.swift */,
 				333C634D1BE8DB4400401FE9 /* GameScene.sks */,
 				333C634F1BE8DB4400401FE9 /* GameScene.swift */,
+				33FDBEEF1BEA335E00FEA30E /* Joystick.swift */,
+				33FDBEF11BEA6BF800FEA30E /* Button.swift */,
 				333C63511BE8DB4400401FE9 /* GameViewController.swift */,
 				333C63531BE8DB4400401FE9 /* Main.storyboard */,
 				333C63561BE8DB4400401FE9 /* Assets.xcassets */,
@@ -68,6 +100,13 @@
 				333C635B1BE8DB4400401FE9 /* Info.plist */,
 			);
 			path = GameController;
+			sourceTree = "<group>";
+		};
+		33FDBEF31BEA790E00FEA30E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,6 +119,7 @@
 				333C63441BE8DB4400401FE9 /* Sources */,
 				333C63451BE8DB4400401FE9 /* Frameworks */,
 				333C63461BE8DB4400401FE9 /* Resources */,
+				337F6B461BEA7BED0035A5BA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -142,7 +182,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33FDBEF21BEA6BF800FEA30E /* Button.swift in Sources */,
 				333C63501BE8DB4400401FE9 /* GameScene.swift in Sources */,
+				33FDBEF01BEA335E00FEA30E /* Joystick.swift in Sources */,
 				333C63521BE8DB4400401FE9 /* GameViewController.swift in Sources */,
 				333C634C1BE8DB4400401FE9 /* AppDelegate.swift in Sources */,
 			);
@@ -257,10 +299,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GameController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.danielgronlund.experiments.GameController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -268,10 +316,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GameController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.danielgronlund.experiments.GameController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -294,6 +348,7 @@
 				333C63601BE8DB4400401FE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

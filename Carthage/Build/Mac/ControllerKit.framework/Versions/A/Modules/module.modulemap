@@ -1,0 +1,10 @@
+framework module ControllerKit {
+  umbrella header "ControllerKit.h"
+
+  export *
+  module * { export * }
+}
+
+module ControllerKit.Swift {
+    header "ControllerKit-Swift.h"
+}
